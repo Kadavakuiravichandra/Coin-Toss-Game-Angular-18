@@ -1,0 +1,33 @@
+<div class="container">
+  <div class="row">
+    <div
+      class="col-12 d-flex flex-column align-items-center justify-content-center py-5"
+    >
+      <section class="col-md-6">
+        <img
+          src="https://assets.ccbp.in/frontend/react-js/google-logo.png"
+          alt="google-logo"
+          class="w-100"
+        />
+        <input
+          [(ngModel)]="userInputText"
+          (input)="onSearchGoogleSuggestion()"
+          type="search"
+          class="form-control shadow p-3 my-3"
+          placeholder="Search"
+        />
+      </section>
+
+      <section class="col-12 col-md-6">
+        <ul class="p-0">
+          <li *ngFor="let suggestion of filterSuggestion">
+            <app-google-suggestions-item
+              [suggestion]="suggestion"
+              (selectedSuggestion)="setSelectedSuggestion($event)"
+            ></app-google-suggestions-item>
+          </li>
+        </ul>
+      </section>
+    </div>
+  </div>
+</div>
