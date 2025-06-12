@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { TabItemComponent } from './tab-item.component';
+import { GalleryAppComponent } from './gallery-app.component';
 
-describe('TabItemComponent', () => {
-  let component: TabItemComponent;
-  let fixture: ComponentFixture<TabItemComponent>;
+describe('GalleryAppComponent', () => {
+  let component: GalleryAppComponent;
+  let fixture: ComponentFixture<GalleryAppComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [TabItemComponent]
+      imports: [GalleryAppComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(TabItemComponent);
+    fixture = TestBed.createComponent(GalleryAppComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

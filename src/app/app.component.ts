@@ -1,11 +1,10 @@
 import { Component } from '@angular/core';
-import { NavbarComponent } from "./components/navbar/navbar.component";
-import { HomeComponent } from "./components/home/home.component";
+import { GalleryAppComponent } from "./components/gallery-app/gallery-app.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [NavbarComponent, HomeComponent],
+  imports: [GalleryAppComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })

@@ -1,0 +1,27 @@
+<div class="container">
+  <div class="row">
+    <div class="d-flex flex-column align-items-center">
+      <section class="col-md-6 pt-5">
+        <img
+          [src]="initialGalleryItem.imageUrl"
+          [alt]="initialGalleryItem.imageAltText"
+          class="w-100"
+        />
+        <h3 class="text-secondary">Nature Photography</h3>
+        <p class="text-secondary">Nature Photography by Ravichandra</p>
+      </section>
+
+      <section>
+        <ul class="d-flex flex-wrap p-0">
+          <li *ngFor="let gallery of imagesList">
+            <app-gallery-app-item
+              (selectedThumbnail)="onSetThumbnail($event)"
+              [galleryThumbnails]="gallery"
+              [activeThumbnail]="initialGalleryItem"
+            ></app-gallery-app-item>
+          </li>
+        </ul>
+      </section>
+    </div>
+  </div>
+</div>
