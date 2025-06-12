@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
-import { GalleryAppComponent } from "./components/gallery-app/gallery-app.component";
+import { CapitalsAppComponent } from "./components/capitals-app/capitals-app.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [GalleryAppComponent],
+  imports: [CapitalsAppComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
