@@ -1,0 +1,40 @@
+<div class="container">
+  <div class="row">
+    <div
+      class="d-flex flex-column align-items-center text-secondary py-2 gap-5 py-md-5"
+    >
+      <h1>Coin Toss Game</h1>
+      <h4>Head (or) Tails</h4>
+      <div class="col-md-4 col-lg-2">
+        <img [src]="initialImg" [alt]="initialImg" class="w-100" />
+      </div>
+      <button
+        (click)="onClickGameStarts()"
+        type="button"
+        class="btn btn-primary"
+      >
+        Toss Coin
+      </button>
+      <div class="d-flex gap-5">
+        <p>
+          <strong> Total : </strong
+          ><span class="text-primary h6">
+            {{ totalCount }}
+          </span>
+        </p>
+        <p>
+          <strong> Heads : </strong
+          ><span class="text-primary h6">
+            {{ totalHeads }}
+          </span>
+        </p>
+        <p>
+          <strong> Tails : </strong
+          ><span class="text-primary h6">
+            {{ totalTails }}
+          </span>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
