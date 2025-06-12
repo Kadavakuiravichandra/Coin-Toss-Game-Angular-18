@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CapitalsAppComponent } from './capitals-app.component';
+import { CoinTossGameComponent } from './coin-toss-game.component';
 
-describe('CapitalsAppComponent', () => {
-  let component: CapitalsAppComponent;
-  let fixture: ComponentFixture<CapitalsAppComponent>;
+describe('CoinTossGameComponent', () => {
+  let component: CoinTossGameComponent;
+  let fixture: ComponentFixture<CoinTossGameComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [CapitalsAppComponent]
+      imports: [CoinTossGameComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(CapitalsAppComponent);
+    fixture = TestBed.createComponent(CoinTossGameComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

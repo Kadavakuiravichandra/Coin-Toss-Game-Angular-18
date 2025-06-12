@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
-import { CapitalsAppComponent } from "./components/capitals-app/capitals-app.component";
+import { CoinTossGameComponent } from "./components/coin-toss-game/coin-toss-game.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CapitalsAppComponent],
+  imports: [CoinTossGameComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
