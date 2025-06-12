@@ -1,0 +1,10 @@
+<button
+  class="tab-btn"
+  [ngClass]="{
+    'active-tab-btn': activeTab === tabItem.tabId
+  }"
+  type="button"
+  (click)="sendTabDetails(tabItem)"
+>
+  {{ tabItem.displayText }}
+</button>

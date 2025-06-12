@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
-import { DestinationComponent } from "./components/destination/destination.component";
+import { NavbarComponent } from "./components/navbar/navbar.component";
+import { HomeComponent } from "./components/home/home.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [DestinationComponent],
+  imports: [NavbarComponent, HomeComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
